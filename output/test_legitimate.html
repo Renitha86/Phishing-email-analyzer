@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Email Analysis Report</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #f2f2f2;
+        }
+
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .indicator {
+            color: #b00020;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Phishing Email Analysis Report</h1>
+
+<p><strong>File:</strong> test_legitimate.eml</p>
+
+<h2>Sender Details</h2>
+
+<table>
+<tr>
+    <th>Field</th>
+    <th>Value</th>
+</tr>
+
+<tr>
+    <td>From</td>
+    <td>Alice <alice@example.com></td>
+</tr>
+
+<tr>
+    <td>Reply-To</td>
+    <td>Not available</td>
+</tr>
+
+<tr>
+    <td>Return-Path</td>
+    <td>Not available</td>
+</tr>
+
+<tr>
+    <td>Subject</td>
+    <td>Test Email - Lab 05</td>
+</tr>
+
+</table>
+
+
+<h2>Authentication Results</h2>
+
+<table>
+
+<tr>
+    <th>Authentication Method</th>
+    <th>Result</th>
+</tr>
+
+<tr>
+    <td>SPF</td>
+    <td>unknown</td>
+</tr>
+
+<tr>
+    <td>DKIM</td>
+    <td>unknown</td>
+</tr>
+
+<tr>
+    <td>DMARC</td>
+    <td>unknown</td>
+</tr>
+
+</table>
+
+
+<h2>Detected Indicators</h2>
+
+<table>
+
+<tr>
+    <th>Indicator</th>
+    <th>Score</th>
+</tr>
+
+<tr>
+    <td colspan="2">No suspicious indicators detected.</td>
+</tr>
+
+</table>
+
+
+<h2>URLs</h2>
+
+<table>
+
+<tr>
+    <th>URL</th>
+    <th>Malicious</th>
+    <th>Suspicious</th>
+    <th>Harmless</th>
+    <th>Undetected</th>
+</tr>
+
+<tr>
+    <td>https://example.com</td>
+    <td>0</td>
+    <td>0</td>
+    <td>64</td>
+    <td>26</td>
+</tr>
+
+</table>
+
+
+<h2>Attachments</h2>
+
+<table>
+
+<tr>
+    <th>Filename</th>
+    <th>Type</th>
+    <th>Size</th>
+    <th>SHA-256</th>
+    <th>VirusTotal</th>
+</tr>
+
+<tr>
+    <td colspan="5">No attachments detected.</td>
+</tr>
+
+</table>
+
+
+<h2>Final Assessment</h2>
+
+<p class="score">
+Risk Score: 0/100
+</p>
+
+<p>
+<strong>Verdict:</strong> Low
+</p>
+
+</body>
+</html>

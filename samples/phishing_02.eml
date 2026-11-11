@@ -1,0 +1,16 @@
+From: Bank Security <attacker.example.net>
+To: analyst@example.com
+Subject: Account Security Alert
+Reply-To: security@fake-login.example.net
+Authentication-Results: mail.example.com; spf=fail
+ smtp.mailfrom=attacker.example.net; dkim=fail header.d=attacker.example.net;
+ dmarc=fail header.from=attacker.example.net
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Your account requires security verification.
+
+Visit https://example.com/verify immediately.
+
+This is a simulated phishing test.

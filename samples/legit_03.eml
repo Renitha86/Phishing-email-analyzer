@@ -1,0 +1,13 @@
+From: Library <library@example.com>
+To: analyst@example.com
+Subject: Book Return Reminder
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Hello,
+
+This is a reminder that your borrowed books are due next week.
+
+Thank you,
+Library Team

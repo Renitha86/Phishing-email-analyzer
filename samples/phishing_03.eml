@@ -1,0 +1,16 @@
+From: Cloud Admin <attacker.example.net>
+To: analyst@example.com
+Subject: Password Expiration Notice
+Reply-To: admin@fake-login.example.net
+Authentication-Results: mail.example.com; spf=fail
+ smtp.mailfrom=attacker.example.net; dkim=fail header.d=attacker.example.net;
+ dmarc=fail header.from=attacker.example.net
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Your password is scheduled to expire.
+
+Visit https://example.com/password to update it.
+
+This is a simulated phishing test.

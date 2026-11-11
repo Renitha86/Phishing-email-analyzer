@@ -1,0 +1,14 @@
+filename,sender,risk_score,verdict
+test_suspicious.eml,Microsoft Support <support@attacker-example.com>,75,High
+test_with_attachment.eml,Microsoft Support <support@attacker-example.com>,75,High
+phishing_01.eml,Microsoft Support <attacker.example.net>,60,High
+phishing_02.eml,Bank Security <attacker.example.net>,60,High
+phishing_03.eml,Cloud Admin <attacker.example.net>,60,High
+phishing_04.eml,Security Team <attacker.example.net>,60,High
+phishing_05.eml,Payroll Department <attacker.example.net>,60,High
+legit_01.eml,Alice <alice@example.com>,0,Low
+legit_02.eml,HR Team <hr@example.com>,0,Low
+legit_03.eml,Library <library@example.com>,0,Low
+legit_04.eml,IT Support <it@example.com>,0,Low
+legit_05.eml,Professor <professor@example.com>,0,Low
+test_legitimate.eml,Alice <alice@example.com>,0,Low

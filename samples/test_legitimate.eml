@@ -1,0 +1,16 @@
+From: Alice <alice@example.com>
+To: Bob <bob@example.com>
+Subject: Test Email - Lab 05
+Date: Tue, 22 Sep 2026 10:00:00 +0530
+Message-ID: <test001@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Bob,
+
+This is a harmless test email for the Phishing Email Analyzer lab.
+
+Please visit https://example.com for more information.
+
+Regards,
+Alice

@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Email Analysis Report</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #f2f2f2;
+        }
+
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .indicator {
+            color: #b00020;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Phishing Email Analysis Report</h1>
+
+<p><strong>File:</strong> phishing_05.eml</p>
+
+<h2>Sender Details</h2>
+
+<table>
+<tr>
+    <th>Field</th>
+    <th>Value</th>
+</tr>
+
+<tr>
+    <td>From</td>
+    <td>Payroll Department <attacker.example.net></td>
+</tr>
+
+<tr>
+    <td>Reply-To</td>
+    <td>payroll@fake-login.example.net</td>
+</tr>
+
+<tr>
+    <td>Return-Path</td>
+    <td>Not available</td>
+</tr>
+
+<tr>
+    <td>Subject</td>
+    <td>Payroll Verification Required</td>
+</tr>
+
+</table>
+
+
+<h2>Authentication Results</h2>
+
+<table>
+
+<tr>
+    <th>Authentication Method</th>
+    <th>Result</th>
+</tr>
+
+<tr>
+    <td>SPF</td>
+    <td>fail</td>
+</tr>
+
+<tr>
+    <td>DKIM</td>
+    <td>fail</td>
+</tr>
+
+<tr>
+    <td>DMARC</td>
+    <td>fail</td>
+</tr>
+
+</table>
+
+
+<h2>Detected Indicators</h2>
+
+<table>
+
+<tr>
+    <th>Indicator</th>
+    <th>Score</th>
+</tr>
+
+<tr>
+    <td class="indicator">
+        SPF failure
+    </td>
+
+    <td>
+        +20
+    </td>
+</tr>
+
+<tr>
+    <td class="indicator">
+        DKIM failure
+    </td>
+
+    <td>
+        +20
+    </td>
+</tr>
+
+<tr>
+    <td class="indicator">
+        DMARC failure
+    </td>
+
+    <td>
+        +20
+    </td>
+</tr>
+
+</table>
+
+
+<h2>URLs</h2>
+
+<table>
+
+<tr>
+    <th>URL</th>
+    <th>Malicious</th>
+    <th>Suspicious</th>
+    <th>Harmless</th>
+    <th>Undetected</th>
+</tr>
+
+<tr>
+    <td>https://example.com/payroll</td>
+    <td colspan="4">
+        VirusTotal returned HTTP 404
+    </td>
+</tr>
+
+</table>
+
+
+<h2>Attachments</h2>
+
+<table>
+
+<tr>
+    <th>Filename</th>
+    <th>Type</th>
+    <th>Size</th>
+    <th>SHA-256</th>
+    <th>VirusTotal</th>
+</tr>
+
+<tr>
+    <td colspan="5">No attachments detected.</td>
+</tr>
+
+</table>
+
+
+<h2>Final Assessment</h2>
+
+<p class="score">
+Risk Score: 60/100
+</p>
+
+<p>
+<strong>Verdict:</strong> High
+</p>
+
+</body>
+</html>

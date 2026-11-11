@@ -1,0 +1,23 @@
+From: Microsoft Support <support@attacker-example.com>
+To: Alice <alice@example.com>
+Reply-To: security@fake-login.example.net
+Return-Path: <bounce@attacker-example.com>
+Authentication-Results: mail.example.com; spf=fail smtp.mailfrom=attacker-example.com; dkim=fail header.d=attacker-example.com; dmarc=fail header.from=attacker-example.com
+Received: from suspicious.example.net (suspicious.example.net [192.0.2.10])
+Subject: Urgent Account Verification
+Date: Tue, 22 Sep 2026 10:30:00 +0530
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+Your account requires verification.
+
+This is a simulated phishing email created only for the Lab 05
+Phishing Email Analyzer testing environment.
+
+Do not enter any real credentials.
+
+Regards,
+Security Team
+For this simulated lab test, visit https://example.com/test

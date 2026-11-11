@@ -1,0 +1,34 @@
+From: Microsoft Support <support@attacker-example.com>
+To: Alice <alice@example.com>
+Reply-To: security@fake-login.example.net
+Return-Path: <bounce@attacker-example.com>
+Authentication-Results: mail.example.com; spf=fail
+ smtp.mailfrom=attacker-example.com; dkim=fail header.d=attacker-example.com;
+ dmarc=fail header.from=attacker-example.com
+Subject: Urgent Account Verification
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============0437600023790125658=="
+
+--===============0437600023790125658==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+This is a simulated phishing email for Lab 05.
+
+Visit https://example.com/test
+
+Regards,
+Security Team
+
+--===============0437600023790125658==
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="safe_test.txt"
+MIME-Version: 1.0
+
+VGhpcyBpcyBhIGhhcm1sZXNzIHRlc3QgYXR0YWNobWVudCBmb3IgdGhlIEJDU1NMIExhYiAwNSBw
+aGlzaGluZyBlbWFpbCBhbmFseXplci4=
+
+--===============0437600023790125658==--
